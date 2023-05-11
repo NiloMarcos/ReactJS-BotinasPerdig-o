@@ -4,11 +4,14 @@ import { Header } from '../../components/Header/nav';
 
 import { SliderBanner } from '../../components/SliderBanner';
 
+import { Footer } from '../../components/Footer';
+
 export function Home() {
   return (
     <div>
       <Header />
       <SliderBanner />
+      <Footer />
     </div>
   );
 }

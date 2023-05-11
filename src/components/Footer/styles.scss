@@ -1,0 +1,21 @@
+footer {
+  background: #5d3d25;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 100px;
+  }
+
+  p {
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFF;
+  }
+
+  a {
+    color: #FFF;
+  }
+}

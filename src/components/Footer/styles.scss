@@ -1,21 +1,118 @@
+/* Footer Styling */
 footer {
-  background: #5d3d25;
+  width: 100%;
+  height: auto;
+  background-color: #24100e;
+  margin-top: 4rem;
 
-  div {
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  
+  .section-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+  
+  .logo-footer {
+    width: 130px !important;
+    height: 90px !important;
+    object-fit: contain !important;
+  }
+  
+  .section-title-first {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top:.5rem;
+  }
+  
+  .section-title-second {
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .section-title-third {
+    color: #fff;
+    text-align: justify;
+    margin-top: 1rem;
+  }
+  
+  .text-contact {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .text-number-first {
+    margin-top: 1rem;
+    color: #fff;
+  }
+  
+  .text-number-second {
+    margin-top: 1rem;
+    color: #fff;
+  }
+  
+  .text-email {
+    margin-top: 1rem;
+    color: #fff;
+  }
+  
+  .container-manager {
+    border-top: .9px solid gray;
+    margin-top: 2rem
+  }
+  
+  .container-manager p {
+    text-align: center;
+    color: gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .social-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
-    height: 100px;
-  }
+    flex-direction: column;
+    position: relative;
+    top: -29px;
 
-  p {
-    font-weight: 600;
-    line-height: 30px;
-    color: #FFF;
-  }
+    .social-icons {
+      display: flex;
+      flex-direction: row;
+      
+    }
 
-  a {
-    color: #FFF;
+    .social-icons a {
+      color: #FFF;
+      font-size: 1.2rem;
+      padding: 1rem .5rem;
+    }
+
+  }
+  
+  .social-section p {
+    color: #fff;
+    font-weight: bold;
   }
 }
+
+/* Footer Styling */

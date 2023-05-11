@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--mainColor: #512100;
+	--mainColor: #24100e;
 	--mainColorLight: #5767aa;
 	--textColor: #eee;
 }
@@ -17,6 +17,8 @@ header {
 
   position: fixed;
   width: 100%;
+	
+	z-index: 99999;
 }
 
 nav a {
@@ -51,6 +53,7 @@ nav {
 .header-logo {
 	height: 60px;
 }
+
 
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {

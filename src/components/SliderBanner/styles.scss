@@ -1,8 +1,11 @@
 .div-banner-principal {
   height: 100vh;
-}
+  .banner-principal {
+    width: 100%;
+    height: 100vh;
+  }
 
-.banner-principal {
-  width: 100%;
-  height: 100vh;
+  .thumbs-wrapper {
+    display: none;
+  }
 }

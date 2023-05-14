@@ -1,5 +1,5 @@
 .container-about {
-  margin: 25rem 0 2rem;
+  margin: 5rem 0 2rem;
 
   .content-about {
     max-width: 1440px;
@@ -47,10 +47,121 @@
       }
     }
   }
-
-
-
 }
+
+/* Form CSS */
+.container-form {
+	background-image: url('../../assets/ofuscado-fundo.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 150px 0;
+}
+
+.content-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 150px;
+}
+
+.content-form form {
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+	width: 100%;
+	gap: 20px;
+}
+
+.content-form form input {
+	height: 60px;
+	border: 0;
+	background: #603c20;
+	padding: 20px 30px;
+	border-radius: 10px;
+
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 20px;
+}
+
+.content-form form input::placeholder {
+	color: #FFF;
+	font-weight: 500;
+}
+
+.content-form form textarea::placeholder {
+	color: #FFF;
+	font-weight: 500;
+}
+
+.content-form form textarea {
+	height: 260px;
+	border: 0;
+	background: #603c20;
+	padding: 20px 30px;
+	border-radius: 10px;
+
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 20px;
+
+	resize: none
+}
+
+.btn-send-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 150px;
+	height: 40px;
+	border-radius: 30px;
+	border: 0;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.title-contato {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 40px;
+	padding: 0 0 40px 0;
+}
+
+.sub-text {
+	color: #FFF;
+	font-size: 16px;
+	
+}
+
+.text-street {
+	padding: 42px 0;
+}
+
+.text-street p {
+	color: #FFF;
+	font-weight: 400;
+}
+
+.text-acompanhe {
+	font-size: 1rem;
+	color: #FFF;
+	line-height: 10px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.container-social-links {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.container-social-links a i {
+	color: #FFF;
+	font-size: 1rem;
+}
+/* Form CSS */
 
 
 

@@ -8,11 +8,19 @@ import { Footer } from '../../components/Footer';
 
 import Logo from '../../assets/selo-30anos.png';
 
-import Video from '../../assets/SnapSave.io-Zebu Botinas Vídeo(720p).mp4';
+import { Link } from 'react-router-dom';
+
+// import Video from '../../assets/SnapSave.io-Zebu Botinas Vídeo(720p).mp4';
 
 import './styles.scss';
 
 export function Home() {
+
+  
+  function handleSubmitForm() {
+    alert('Enviado')
+  }
+
   return (
     <div>
       <Header />
@@ -32,15 +40,68 @@ export function Home() {
           </p>
 
           <section className='container-links-about'>
-            <a href="#">Sobre Nós</a>
+            <Link to={'/sobre-nos'}>Sobre Nós</Link>
+
+            <Link to={'#'}>Catálogo</Link>
             
-            <a href="#">Catálogo</a>
-            
-            <a href="#">Contato</a>
+            <Link to={'#'}>Contato</Link>
           </section>
         </div>    
       </div>
 
+
+      <div className="container-form" id="form">
+        <div className="content-form">
+          <div>
+            <p className="title-contato ">Entre em contato <br /> com a perdição</p>
+            <p className="sub-text ">Fale conosco, tire suas dúvidas, envie suas</p>
+            <p className="sub-text ">sugestões, solicite seu orçamento ou faça seu</p>
+            <p className="sub-text ">pedido. Estamos aqui para te atender!</p>
+      
+            <section className="text-street ">
+              <p>BOTINAS PERDIGÃO</p>
+              <p>AV. BRASÍLIA , 870 - PLANALTO</p>
+              <p>PERDIGÃO-MG</p>
+              <p>CEP.: 35545-000 | (37) 3287-1199</p>
+            </section>
+      
+            <p className="text-acompanhe ">Acompanhe a perdigão nas redes sociais</p>
+      
+            <section className="container-social-links ">
+              <a href="https://www.instagram.com/lojadabotinabrasil/" target="_blank">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              
+              <a href="https://api.whatsapp.com/send?phone=3799638843" target="_blank">
+                <i className="fa-brands fa-whatsapp"></i>
+              </a>
+            </section>
+          </div>
+      
+          <form>
+            <input 
+              type="text" 
+              placeholder="Seu nome" 
+              name='name'
+              required />
+            
+            <input 
+              type="email" 
+              placeholder="Seu e-mail para contato" 
+              name='email'
+              required 
+            />
+            
+            <textarea 
+              placeholder="Insira sua mensagem" 
+              name='message'
+              required>
+            </textarea>
+            
+            <button type="submit" class="btn-send-form" onClick={handleSubmitForm}>Enviar</button>
+          </form>
+        </div>
+      </div>
 
       <Footer />
     </div>

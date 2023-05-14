@@ -1,10 +1,19 @@
 import React from 'react';
-import { Home } from './pages/Home';
+
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from './routes/routes';
 
 import './App.scss';
 
 function App() {
-  return <Home />
+  return (
+    <BrowserRouter>
+      <>
+        <Routes></Routes>
+      </>
+    </BrowserRouter>
+  );
 }
 
 export default App;

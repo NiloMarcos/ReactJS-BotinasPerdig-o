@@ -13,7 +13,11 @@ import './styles.scss';
 export function SliderBanner() {
   return (
     <div className='div-banner-principal'>
-      <Carousel>
+      <Carousel
+        autoPlay={true}
+        autoFocus={true}
+        infiniteLoop={true}
+      >
         <div>
             <img src={Banner} />
         </div>

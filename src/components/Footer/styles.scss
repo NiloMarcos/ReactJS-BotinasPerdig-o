@@ -113,5 +113,24 @@ footer {
     font-weight: bold;
   }
 }
-
 /* Footer Styling */
+
+@media screen and (min-width: 50px) and (max-width: 1024px) {
+  footer {
+    .section-titles {
+      width: 100%;
+    }
+
+    .section-contact {
+      p {
+        text-align: center;
+      }
+    }
+
+    .social-section {
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

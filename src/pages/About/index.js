@@ -23,6 +23,7 @@ import photo5 from '../../assets/grid-4.jpg';
 import photo6 from '../../assets/grid-2.jpg';
 
 import './styles.scss';
+import { SliderAboutMobile } from '../../components/SliderAboutMobile';
 
 export function About() {
   return (
@@ -124,6 +125,10 @@ export function About() {
           <div className="grid-empresa-3">
             <img src={photo6} alt="Foto 6" className="grid-empresa-3-img" />
           </div>
+        </div>
+
+        <div className="container-grid-mobile">
+          <SliderAboutMobile />
         </div>
       </div>
       

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Header } from '../../components/Header/nav';
 
@@ -12,15 +12,21 @@ import Logo from '../../assets/selo-30anos.png';
 
 import { Link } from 'react-router-dom';
 
+import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+
 // import Video from '../../assets/SnapSave.io-Zebu Botinas Vídeo(720p).mp4';
 
 import './styles.scss';
+import { SliderCatalogo } from '../../components/SliderCatalago';
 
 export function Home() {
-
+  const [ name, setName ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ message, setMessage ] = useState('');
   
-  function handleSubmitForm() {
-    alert('Enviado')
+  function handleSubmitForm(e) {
+    e.preventDefault();
+    
   }
 
   return (
@@ -57,11 +63,14 @@ export function Home() {
         </div>    
       </div>
 
+      <div className='container-catalogo'>
+        <SliderCatalogo />
+      </div>
 
       <div className="container-form" id="form">
         <div className="content-form">
           <div>
-            <p className="title-contato ">Entre em contato <br /> com a perdição</p>
+            <p className="title-contato ">Entre em contato com a perdição</p>
             <p className="sub-text ">Fale conosco, tire suas dúvidas, envie suas</p>
             <p className="sub-text ">sugestões, solicite seu orçamento ou faça seu</p>
             <p className="sub-text ">pedido. Estamos aqui para te atender!</p>
@@ -75,13 +84,13 @@ export function Home() {
       
             <p className="text-acompanhe ">Acompanhe a perdigão nas redes sociais</p>
       
-            <section className="container-social-links ">
+            <section className="container-social-links">
               <a href="https://www.instagram.com/lojadabotinabrasil/" target="_blank">
-                <i className="fa-brands fa-instagram"></i>
+                <AiOutlineInstagram />
               </a>
               
               <a href="https://api.whatsapp.com/send?phone=3799638843" target="_blank">
-                <i className="fa-brands fa-whatsapp"></i>
+                <AiOutlineWhatsApp />
               </a>
             </section>
           </div>

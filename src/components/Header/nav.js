@@ -4,6 +4,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import Logo from '../../assets/logo-footer.png';
 
+import { Link } from 'react-router-dom';
+
 import "./styles.scss";
 
 export function Header() {
@@ -20,10 +22,10 @@ export function Header() {
 			<img src={Logo} alt="Logo do Header" className='header-logo' />
 
 			<nav ref={navRef}>
-				<a href="/#">Início</a>
-				<a href="/#">Sobre nós</a>
-				<a href="/#">Catálogo</a>
-				<a href="/#">Contato</a>
+				<Link to={'/'}>Início</Link>
+				<Link to={'/sobre-nos'}>Sobre nós</Link>
+				<Link to={''}>Catálogo</Link>
+				<Link to={''}>Contato</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

@@ -1,5 +1,5 @@
 .container-about {
-  margin: 5rem 0 2rem;
+  margin: 12rem 0 2rem;
 
   .content-about {
     max-width: 1440px;
@@ -159,11 +159,16 @@
 	gap: 10px;
 }
 
-.container-social-links a i {
+.container-social-links a svg {
 	color: #FFF;
 	font-size: 1rem;
 }
 /* Form CSS */
+
+.container-catalogo {
+	max-width: 1440px;
+	margin: 0 auto;
+}
 
 .slider-mobile {
 	display: none;

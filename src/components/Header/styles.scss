@@ -15,10 +15,10 @@ header {
 	background-color: var(--mainColor);
 	color: var(--textColor);
 
-  position: fixed;
-  width: 100%;
+  // position: fixed;
+  // width: 100%;
 	
-	z-index: 99999;
+	// z-index: 99999;
 }
 
 nav a {
@@ -74,6 +74,7 @@ nav {
 		gap: 1.5rem;
 		background-color: var(--mainColor);
 		transition: 1s;
+		z-index: 99;
 	}
 
 	header .responsive_nav {

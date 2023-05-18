@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo-footer.png';
 
 import "./styles.scss";
 

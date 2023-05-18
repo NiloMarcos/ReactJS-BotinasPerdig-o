@@ -163,5 +163,49 @@
 }
 /* Form CSS */
 
+.slider-mobile {
+	display: none;
+}
+
+@media screen and (min-width: 50px) and (max-width: 1024px) {
+	.slider-mobile {
+		display: block !important;
+	}
+
+	.slider-desktop {
+		display: none;
+	}
+
+	.container-about {
+		padding: 0 20px;
+
+		.content-about {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.container-form {
+		padding: 0;
+
+		.content-form {
+			flex-direction: column;
+			padding: 0 20px;
+			gap: 0;
+
+			.title-contato  {
+				padding: 14px 0 36px 0;
+				font-size: 24px;
+			}
+	
+			form {
+				max-width: none;
+				padding: 30px 0 40px 0;
+			}
+		}
+	}
+}
+
 
 

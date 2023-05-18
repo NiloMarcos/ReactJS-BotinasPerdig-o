@@ -4,6 +4,8 @@ import { Header } from '../../components/Header/nav';
 
 import { SliderBanner } from '../../components/SliderBanner';
 
+import { SliderBannerMobile } from '../../components/SliderBannerMobile';
+
 import { Footer } from '../../components/Footer';
 
 import Logo from '../../assets/selo-30anos.png';
@@ -25,7 +27,13 @@ export function Home() {
     <div>
       <Header />
 
-      <SliderBanner />
+      <div className='slider-desktop'>
+        <SliderBanner />
+      </div>
+
+      <div className='slider-mobile'>
+        <SliderBannerMobile />
+      </div>
 
       <div className='container-about'>
         <div className='content-about'>

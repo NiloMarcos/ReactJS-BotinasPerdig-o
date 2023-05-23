@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Header } from '../../components/Header/nav';
 
@@ -14,15 +14,15 @@ import { Link } from 'react-router-dom';
 
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 
-// import Video from '../../assets/SnapSave.io-Zebu Botinas Vídeo(720p).mp4';
+// import Video from '../../assets/banner-movie.mp4';
 
 import './styles.scss';
 import { SliderCatalogo } from '../../components/SliderCatalago';
 
 export function Home() {
-  const [ name, setName ] = useState('');
-  const [ email, setEmail ] = useState('');
-  const [ message, setMessage ] = useState('');
+  // const [ name, setName ] = useState('');
+  // const [ email, setEmail ] = useState('');
+  // const [ message, setMessage ] = useState('');
   
   function handleSubmitForm(e) {
     e.preventDefault();

@@ -47,6 +47,8 @@ header div,
 nav {
 	display: flex;
 	align-items: center;
+	position: absolute;
+	right: 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -73,6 +75,10 @@ nav {
 		background-color: var(--mainColor);
 		transition: 1s;
 		z-index: 9;
+	}
+
+	header div, nav {
+		position: relative;
 	}
 
 	header .responsive_nav {

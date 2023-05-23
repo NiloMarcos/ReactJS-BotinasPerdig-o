@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Header } from '../../components/Header/nav';
 
@@ -16,17 +16,25 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 
 // import Video from '../../assets/banner-movie.mp4';
 
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 import './styles.scss';
 import { SliderCatalogo } from '../../components/SliderCatalago';
 
 export function Home() {
-  // const [ name, setName ] = useState('');
-  // const [ email, setEmail ] = useState('');
-  // const [ message, setMessage ] = useState('');
-  
+  const [ name, setName ] = useState('');
+  const [ email, setEmail ] = useState('');
+  const [ message, setMessage ] = useState('');
+
   function handleSubmitForm(e) {
     e.preventDefault();
     
+    // if (name, email, message === '') {
+    //   alert('preencha todos os campos')
+    // }
+
   }
 
   return (
@@ -95,27 +103,35 @@ export function Home() {
             </section>
           </div>
       
-          <form>
+          <form onSubmit={() => handleSubmitForm}>
             <input 
               type="text" 
               placeholder="Seu nome" 
               name='name'
-              required />
+              required 
+              value={name}  
+              onChange={(e) => setName(e.target.value)}
+            />
             
             <input 
               type="email" 
               placeholder="Seu e-mail para contato" 
               name='email'
               required 
+              value={email}  
+              onChange={(e) => setEmail(e.target.value)}
             />
             
             <textarea 
               placeholder="Insira sua mensagem" 
               name='message'
-              required>
+              required
+              value={message}  
+              onChange={(e) => setMessage(e.target.value)}  
+            >
             </textarea>
             
-            <button type="submit" class="btn-send-form" onClick={handleSubmitForm}>Enviar</button>
+            <button type="submit" class="btn-send-form">Enviar</button>
           </form>
         </div>
       </div>

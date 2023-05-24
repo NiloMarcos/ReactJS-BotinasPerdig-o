@@ -16,6 +16,8 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 
 // import Video from '../../assets/banner-movie.mp4';
 
+import emailjs from '@emailjs/browser';
+
 import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,15 +28,28 @@ import { SliderCatalogo } from '../../components/SliderCatalago';
 export function Home() {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
+  // const [ phone, setPhone ] = useState('');
   const [ message, setMessage ] = useState('');
 
   function handleSubmitForm(e) {
     e.preventDefault();
-    
-    // if (name, email, message === '') {
-    //   alert('preencha todos os campos')
-    // }
 
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email
+    }
+
+    emailjs.send("service_6vxtp1i", "template_oer7r7r", templateParams, "wJw8GEGUp2O9TzFol")
+    .then((response) => {
+      toast.success('Email enviado com sucesso, logo entraremos em contato!');
+      console.log("Email enviado", response.status, response.text);
+      setName('');
+      setEmail('');
+      setMessage('');
+    }, (error) => {
+      console.log("Ocorreu um erro", error);
+    })
   }
 
   return (
@@ -103,7 +118,7 @@ export function Home() {
             </section>
           </div>
       
-          <form onSubmit={() => handleSubmitForm}>
+          <form onSubmit={handleSubmitForm}>
             <input 
               type="text" 
               placeholder="Seu nome" 
@@ -121,6 +136,15 @@ export function Home() {
               value={email}  
               onChange={(e) => setEmail(e.target.value)}
             />
+
+            {/* <input 
+              type="text" 
+              placeholder="Numero para contato" 
+              name='number'
+              required 
+              value={phone}  
+              onChange={(e) => setPhone(e.target.value)}
+            /> */}
             
             <textarea 
               placeholder="Insira sua mensagem" 

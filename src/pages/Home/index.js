@@ -91,7 +91,9 @@ export function Home() {
       </div>
 
       <div className='container-catalogo'>
-        <SliderCatalogo />
+        <div className="content-catalogo">
+          <SliderCatalogo />
+        </div>
       </div>
 
       <div className="container-video">

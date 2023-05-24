@@ -92,7 +92,7 @@ export function Home() {
 
       <div className='container-catalogo'>
         <div className="content-catalogo">
-          <SliderCatalogo />
+          {/* <SliderCatalogo /> */}
         </div>
       </div>
 

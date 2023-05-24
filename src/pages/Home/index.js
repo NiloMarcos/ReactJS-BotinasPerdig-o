@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 
-// import Video from '../../assets/banner-movie.mp4';
+import Video from '../../assets/banner-movie.mp4';
 
 import emailjs from '@emailjs/browser';
 
@@ -88,6 +88,12 @@ export function Home() {
 
       <div className='container-catalogo'>
         <SliderCatalogo />
+      </div>
+
+      <div className="container-video">
+        <video controls>
+              <source src={Video} type="video/mp4"/>
+        </video>
       </div>
 
       <div className="container-form" id="form">

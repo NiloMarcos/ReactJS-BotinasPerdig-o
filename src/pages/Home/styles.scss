@@ -1,5 +1,5 @@
 .container-about {
-  margin: 12rem 0 2rem;
+  margin: 8rem 0 2rem;
 
   .content-about {
     max-width: 1440px;
@@ -172,6 +172,21 @@
 
 .slider-mobile {
 	display: none;
+}
+
+.container-video {
+	margin: 0 auto;
+	background-image: url('../../assets//fundo-de-madeira.jpg');
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	video {
+    max-width: 800px;
+    padding: 3rem 1rem;
+    width: 100%;
+	}
 }
 
 @media screen and (min-width: 50px) and (max-width: 1024px) {

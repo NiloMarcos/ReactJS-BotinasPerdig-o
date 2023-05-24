@@ -51,6 +51,11 @@ nav {
 	right: 0;
 }
 
+.header-logo {
+	max-width: 200px;
+	object-fit: contain;
+}
+
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
 		visibility: visible;

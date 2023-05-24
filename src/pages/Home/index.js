@@ -8,22 +8,26 @@ import { SliderBannerMobile } from '../../components/SliderBannerMobile';
 
 import { Footer } from '../../components/Footer';
 
-import Logo from '../../assets/selo-30anos.png';
+import { toast } from 'react-toastify';
+
+import { SliderCatalogo } from '../../components/SliderCatalago';
 
 import { Link } from 'react-router-dom';
 
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 
+import Logo from '../../assets/selo-30anos.png';
+
 import Video from '../../assets/banner-movie.mp4';
 
-import emailjs from '@emailjs/browser';
+import VideoPoster from '../../assets/fabrica-fora.jpg';
 
-import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 
 import 'react-toastify/dist/ReactToastify.css';
 
 import './styles.scss';
-import { SliderCatalogo } from '../../components/SliderCatalago';
+
 
 export function Home() {
   const [ name, setName ] = useState('');
@@ -91,7 +95,7 @@ export function Home() {
       </div>
 
       <div className="container-video">
-        <video controls>
+        <video controls poster={VideoPoster} >
               <source src={Video} type="video/mp4"/>
         </video>
       </div>

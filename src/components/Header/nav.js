@@ -19,7 +19,9 @@ export function Header() {
 
 	return (
 		<header>
-			<img src={Logo} alt="Logo do Header" className='header-logo' />
+			<a href="/">
+				<img src={Logo} alt="Logo do Header" className='header-logo' />
+			</a>
 
 			<nav ref={navRef}>
 				<Link to={'/'}>Início</Link>

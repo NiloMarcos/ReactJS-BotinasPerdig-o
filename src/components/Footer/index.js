@@ -18,12 +18,12 @@ export function Footer() {
             Fabricação • Exportação
           </p>
           <p className="section-title-second">
-            Executamos a fabricação das nossas botas e fazemos a esportação dos calçados.
+            Nosso compromisso é com a qualidade na fabricação de uma botina que satisfaça o nosso cliente com conforto e estilo.
           </p>    
         </section>
         <section className="section-contact">
           <p className="text-contact">Contatos</p>
-          <p className="text-number-first">(37) 9963-8843</p>
+          <p className="text-number-first">(37) 3287-1199</p>
           <p className="text-email">hanferadm@gmail.com</p>
         </section>
         <section className="social-section">
@@ -33,7 +33,7 @@ export function Footer() {
               <AiOutlineInstagram />
             </a>
   
-            <a href="https://api.whatsapp.com/send?phone=3799638843" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=3732871199" target="_blank">
               <AiOutlineWhatsApp />
             </a>
           </section>

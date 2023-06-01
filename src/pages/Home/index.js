@@ -32,7 +32,7 @@ import './styles.scss';
 export function Home() {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
-  // const [ phone, setPhone ] = useState('');
+  const [ phone, setPhone ] = useState('');
   const [ message, setMessage ] = useState('');
 
   function handleSubmitForm(e) {
@@ -92,7 +92,7 @@ export function Home() {
 
       <div className='container-catalogo'>
         <div className="content-catalogo">
-          {/* <SliderCatalogo /> */}
+          <SliderCatalogo />
         </div>
       </div>
 
@@ -147,6 +147,15 @@ export function Home() {
               required 
               value={email}  
               onChange={(e) => setEmail(e.target.value)}
+            />
+
+            <input 
+              type="text" 
+              placeholder="Seu telefone" 
+              name='telefone'
+              required 
+              value={phone}  
+              onChange={(e) => setPhone(e.target.value)}
             />
 
             {/* <input 

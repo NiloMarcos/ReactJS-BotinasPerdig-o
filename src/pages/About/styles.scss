@@ -5,10 +5,11 @@
 
 .title-about {
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	color: #FFF;
-	padding: 0 20px;
-	font-size: 2rem;
+	padding: 0 2rem;
+	font-size: 3rem;
+	max-width: 740px;
 	font-weight: 600;
 }
 
@@ -190,13 +191,12 @@
 }
 /* Grid Images CSS */
 
-@media screen and (min-width: 50px) and (max-width: 600px) {
+@media screen and (min-width: 50px) and (max-width: 1024px) {
 	.title-about {
 		font-size: 1rem;
+		max-width: 300px;
+		padding: 0 2rem;
 	}
-}
-
-@media screen and (min-width: 50px) and (max-width: 1024px) {
 	.container-grid-mobile {
 		display: flex !important;
 	}

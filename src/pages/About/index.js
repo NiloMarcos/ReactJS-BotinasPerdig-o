@@ -32,9 +32,11 @@ export function About() {
 
       <div>
         <div className="banner-princiapal ">
-          <img src={banner} alt="Banner sobre nós" />
+          {/* <img src={banner} alt="Banner sobre nós" /> */}
 
-          <p className="title-about">Em 1990 um jovem sonhou em ter sua própria fábrica de botinas</p>
+          <div className="banner-text-content">
+            <p className="title-about">Em 1990 um jovem sonhou em ter sua própria fábrica de botinas</p>
+          </div>
         </div>
 
         <div className="pics-outside" id="about">

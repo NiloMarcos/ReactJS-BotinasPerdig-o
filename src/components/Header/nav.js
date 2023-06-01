@@ -19,27 +19,29 @@ export function Header() {
 
 	return (
 		<header>
-			<a href="/">
-				<img src={Logo} alt="Logo do Header" className='header-logo' />
-			</a>
+			<section className="content-header">
+				<a href="/">
+					<img src={Logo} alt="Logo do Header" className='header-logo' />
+				</a>
 
-			<nav ref={navRef}>
-				<Link to={'/'}>Início</Link>
-				<Link to={'/sobre-nos'}>Sobre nós</Link>
-				<Link to={''}>Catálogo</Link>
-				<Link to={''}>Contato</Link>
+				<nav ref={navRef}>
+					<Link to={'/'}>Início</Link>
+					<Link to={'/sobre-nos'}>Sobre nós</Link>
+					<Link to={''}>Catálogo</Link>
+					<Link to={''}>Contato</Link>
+					<button
+						className="nav-btn nav-close-btn"
+						onClick={showNavbar}>
+						<FaTimes />
+					</button>
+				</nav>
+				
 				<button
-					className="nav-btn nav-close-btn"
+					className="nav-btn"
 					onClick={showNavbar}>
-					<FaTimes />
+					<FaBars />
 				</button>
-			</nav>
-			
-      <button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
+			</section>
 		</header>
 	);
 }

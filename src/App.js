@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './routes/routes';
 
-import './App.scss';
+import './App.css';
 
 function App() {
   return (

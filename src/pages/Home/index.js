@@ -63,11 +63,11 @@ export function Home() {
     <div>
       <Header />
 
-      <div className='slider-desktop'>
+      <div className='slider-desktop' id='inicio'>
         <SliderBanner />
       </div>
 
-      <div className='slider-mobile'>
+      <div className='slider-mobile' id='inicio'>
         <SliderBannerMobile />
       </div>
 

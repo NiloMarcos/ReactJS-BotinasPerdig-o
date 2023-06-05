@@ -2,9 +2,11 @@ import React, { useRef } from 'react';
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import Logo from '../../assets/logo-footer.png';
+import Logo from '../../assets/logo.png';
 
 import { Link } from 'react-router-dom';
+
+import catalogo from '../../assets/hanfer2022.pdf'
 
 import "./styles.scss";
 
@@ -26,9 +28,9 @@ export function Header() {
 
 				<nav ref={navRef}>
 					<Link to={'/'}>Início</Link>
-					<Link to={'/sobre-nos'}>Sobre nós</Link>
-					<Link to={''}>Catálogo</Link>
-					<Link to={''}>Contato</Link>
+					<a href='#about'>Sobre nós</a>
+					<a href={catalogo} download>Catálogo</a>
+					<a href='#form'>Contato</a>
 					<button
 						className="nav-btn nav-close-btn"
 						onClick={showNavbar}>

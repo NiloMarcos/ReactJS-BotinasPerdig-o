@@ -28,6 +28,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Fade from 'react-reveal/Fade';
 
+import catalogo from '../../assets/hanfer2022.pdf'
+
 import './styles.scss';
 
 export function Home() {
@@ -69,7 +71,7 @@ export function Home() {
         <SliderBannerMobile />
       </div>
 
-      <div className='container-about'>
+      <div className='container-about' id='about'>
         <Fade>
           <div className='content-about'>
             <img src={Logo} alt="Logo selo 30 anos" />
@@ -85,9 +87,9 @@ export function Home() {
             <section className='container-links-about'>
               <Link to={'/sobre-nos'}>Sobre Nós</Link>
 
-              <Link to={'#'}>Catálogo</Link>
-              
-              <Link to={'#'}>Contato</Link>
+              <a href={catalogo} download>Catálogo</a>
+
+              <a href="#form">Contato</a>              
             </section>
           </div>    
         </Fade>

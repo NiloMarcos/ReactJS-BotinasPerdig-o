@@ -34,10 +34,18 @@ nav a {
 	color: var(--textColor);
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
+	transition: 0.4s ease;
 }
 
 nav a:hover {
-	opacity: .7;
+	background: #fafafa;
+	height: 40px;
+	padding: .5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	border-radius: 4px;
 }
 
 header .nav-btn {
@@ -69,6 +77,18 @@ nav {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
+	}
+
+	nav a:hover {
+		background: transparent !important;
+		height: auto;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #FFF;
+		border-radius: 4px;
+		opacity: .7;
 	}
 
 	.header-logo {

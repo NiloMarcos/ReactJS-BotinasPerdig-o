@@ -52,15 +52,21 @@
 
 @media (max-width: 500px) {
   .swiper_container {
-    height: 47rem;
+    height: auto;
   }
   .swiper-slide {
     width: 28rem !important;
-    height: 36rem !important;
+    height: auto !important;
   }
   .swiper-slide img {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 3rem !important;
+  }
+
+  .carousel .slide img {
+    height: 80vh;
+    object-fit: cover;
   }
 }
 
@@ -94,6 +100,10 @@
   .slider-controler .swiper-button-next {
     left: 70% !important;
     transform: translateX(-70%) !important;
+  }
+
+  .container {
+    padding: 0 1rem !important;
   }
 }
 

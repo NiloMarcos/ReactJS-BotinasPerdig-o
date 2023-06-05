@@ -40,7 +40,7 @@
 
 /* Outside Pics CSS */
 .pics-outside {
-	margin: 100px 0;;
+	margin: 100px 0;
 }
 
 .outside-content {
@@ -223,6 +223,7 @@
 
 	.content-values  {
 		flex-wrap: wrap;
+		padding: 1rem 2rem;
 	}
 	
 	.pics-outside {
@@ -253,4 +254,48 @@
 		height: 100%;
 	}
 
+	.card-mission {
+		background: #512100;
+		width: 100%;
+		height: auto;
+
+		.title-card {
+			padding: 4px 32px 0 30px;
+			font-size: 1.5rem;
+		}
+
+		.text-card {
+			padding: 4px 32px 10px 30px;
+		}
+	}
+	
+	.card-vision {
+		background: #582d0f;
+		width: 100%;
+		height: auto;
+
+		.title-card {
+			padding: 4px 32px 0 30px;
+			font-size: 1.5rem;
+		}
+
+		.text-card {
+			padding: 4px 32px 10px 30px;
+		}
+	}
+	
+	.card-values {
+		background: #82634c;
+		width: 100%;
+		height: auto;
+
+		.title-card {
+			font-size: 1.5rem;
+			padding: 4px 32px 0 30px;
+		}
+
+		.text-card {
+			padding: 4px 32px 10px 30px;
+		}
+	}
 }

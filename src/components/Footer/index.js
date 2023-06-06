@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LogoFooter from '../../assets/logo.png';
+import LogoFooter from '../../assets/botinas-perdigao-logo.png';
 
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
 

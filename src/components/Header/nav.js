@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/botinas-perdigao-logo.png';
 
 import { Link } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ export function Header() {
 	return (
 		<header>
 			<section className="content-header">
-				<a href="/">
+				<a href="/" className='content-logo'>
 					<img src={Logo} alt="Logo do Header" className='header-logo' />
 				</a>
 

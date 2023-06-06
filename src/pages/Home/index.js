@@ -130,11 +130,11 @@ export function Home() {
               <p className="text-acompanhe ">Acompanhe a perdigão nas redes sociais</p>
         
               <section className="container-social-links">
-                <a href="https://www.instagram.com/lojadabotinabrasil/" target="_blank">
+                <a href="https://www.instagram.com/lojadabotinabrasil/"  rel="noopener">
                   <AiOutlineInstagram />
                 </a>
                 
-                <a href="https://api.whatsapp.com/send?phone=3799638843" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=3799638843" rel="noopener">
                   <AiOutlineWhatsApp />
                 </a>
               </section>

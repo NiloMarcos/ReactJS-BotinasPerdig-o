@@ -184,6 +184,11 @@
 .container-social-links a svg {
 	color: #FFF;
 	font-size: 1rem;
+	transition: 0.4s ease;
+
+	&:hover {
+		transform: scale(1.2);
+	}
 }
 /* Form CSS */
 

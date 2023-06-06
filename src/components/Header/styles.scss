@@ -68,8 +68,12 @@ nav {
 	right: 0;
 }
 
+.content-logo {
+	display: flex;
+}
+
 .header-logo {
-	max-width: 80px;
+	max-width: 140px;
 	object-fit: contain;
 }
 

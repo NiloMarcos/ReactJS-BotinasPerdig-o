@@ -28,9 +28,9 @@ export function Header() {
 
 				<nav ref={navRef}>
 					<Link to={'/'}>Início</Link>
-					<a href='#about'>Sobre nós</a>
+					<Link to={'/sobre-nos'}>Sobre nós</Link>
 					<a href={catalogo} download>Catálogo</a>
-					<a href='#form'>Contato</a>
+					<Link to={'/contato'}>Contato</Link>
 					<button
 						className="nav-btn nav-close-btn"
 						onClick={showNavbar}>

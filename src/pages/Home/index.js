@@ -77,7 +77,7 @@ export function Home() {
             <img src={Logo} alt="Logo selo 30 anos" />
 
             <p className='text-about'>
-              A botina remete ao trabalho dos cafezais e do homem sertanejo, compnhaiera diária, de lazer e de trabalho do vaqueiro e do peão de rodeio. Um dos ícones da vida rural se transporta para a rotina urbana nos pés de homens, mulheres e crianças. Alcança o gosto e o estilo de quem preza por qualidade e simplicidade.
+              A botina remete ao trabalho dos cafezais e do homem sertanejo, companheira diária, de lazer e de trabalho do vaqueiro e do peão de rodeio. Um dos ícones da vida rural se transporta para a rotina urbana nos pés de homens, mulheres e crianças. Alcança o gosto e o estilo de quem preza por qualidade e simplicidade.
             </p>
 
             <p className='text-about'>
@@ -115,7 +115,7 @@ export function Home() {
         <Fade>
           <div className="content-form">
             <div>
-              <p className="title-contato ">Entre em contato com a perdição</p>
+              <p className="title-contato ">Entre em contato com a perdigão</p>
               <p className="sub-text ">Fale conosco, tire suas dúvidas, envie suas</p>
               <p className="sub-text ">sugestões, solicite seu orçamento ou faça seu</p>
               <p className="sub-text ">pedido. Estamos aqui para te atender!</p>
@@ -134,9 +134,9 @@ export function Home() {
                   <AiOutlineInstagram />
                 </a>
                 
-                <a href="https://api.whatsapp.com/send?phone=3799638843" rel="noopener">
+                {/* <a href="https://api.whatsapp.com/send?phone=3799638843" rel="noopener">
                   <AiOutlineWhatsApp />
-                </a>
+                </a> */}
               </section>
             </div>
         

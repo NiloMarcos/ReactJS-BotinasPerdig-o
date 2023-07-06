@@ -92,7 +92,7 @@ footer {
   
   .social-section {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -101,13 +101,13 @@ footer {
     .social-icons {
       display: flex;
       flex-direction: row;
-      
+      width: 100%;
     }
 
     .social-icons a {
       color: #FFF;
       font-size: 1.2rem;
-      padding: 1rem .5rem;
+      padding: 1rem 0;
       transition: 0.4s ease;
 
       &:hover {

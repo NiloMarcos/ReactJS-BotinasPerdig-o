@@ -14,7 +14,7 @@ export function Footer() {
         <section className="section-titles">
           <img src={LogoFooter} alt="Logo Botinas Perdigão" className="logo-footer" />
           <p className="section-title-second">
-            Nosso compromisso é com a qualidade na fabricação de uma botina que satisfaça o nosso cliente com conforto e estilo.
+            Nosso compromisso é com a qualidade na fabricação de uma botina que satisfaça nosso cliente com conforto e estilo.
           </p>    
         </section>
         <section className="section-contact">
@@ -29,9 +29,9 @@ export function Footer() {
               <AiOutlineInstagram />
             </a>
   
-            <a href="https://api.whatsapp.com/send?phone=3732871199" target="_blank">
+            {/* <a href="https://api.whatsapp.com/send?phone=3732871199" target="_blank" rel="noreferrer">
               <AiOutlineWhatsApp />
-            </a>
+            </a> */}
           </section>
         </section>
       </section>

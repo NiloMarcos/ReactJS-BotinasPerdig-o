@@ -52,7 +52,7 @@ export function About() {
 
               <section className="outside-text">
                 <p className="outside-title">
-                  Antônio Aparecida Ferreira, morador de uma pequena cidade (Perdigão), no Centro Oeste de Minas Gerais, pegou
+                  Antônio Aparecido Ferreira, morador de uma pequena cidade (Perdigão), no Centro Oeste de Minas Gerais, pegou
                   gosto pelo ofício ainda criança. Foi assim que surgiu a Botinas Perdigão, se tornando uma fabrica que desde
                   então, sempre busca fazer o de melhor e mais moderno
                 </p>

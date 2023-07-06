@@ -67,10 +67,6 @@ export function Contact () {
                 <a href="https://www.instagram.com/lojadabotinabrasil/"  rel="noopener">
                   <AiOutlineInstagram />
                 </a>
-                
-                <a href="https://api.whatsapp.com/send?phone=3799638843" rel="noopener">
-                  <AiOutlineWhatsApp />
-                </a>
               </section>
             </div>
         

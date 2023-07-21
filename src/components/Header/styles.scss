@@ -37,6 +37,17 @@ nav a {
 	transition: 0.4s ease;
 }
 
+.link-loja {
+	background: #fafafa;
+	height: 40px;
+	padding: .5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	border-radius: 4px;
+}
+
 nav a:hover {
 	background: #fafafa;
 	height: 40px;

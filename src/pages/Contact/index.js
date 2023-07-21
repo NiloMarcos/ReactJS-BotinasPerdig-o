@@ -49,7 +49,7 @@ export function Contact () {
         <Fade>
           <div className="content-form">
             <div className='subContent-form'>
-              <p className="title-contato ">Entre em contato com a perdição</p>
+              <p className="title-contato ">Entre em contato com a Perdigão</p>
               <p className="sub-text ">Fale conosco, tire suas dúvidas, envie suas</p>
               <p className="sub-text ">sugestões, solicite seu orçamento ou faça seu</p>
               <p className="sub-text ">pedido. Estamos aqui para te atender!</p>

@@ -31,7 +31,7 @@ export function Header() {
 					<Link to={'/sobre-nos'}>Sobre nós</Link>
 					<a href={catalogo} download>Catálogo</a>
 					<Link to={'/contato'}>Contato</Link>
-					<Link to={'http://lojadabotina.com.br/'} className='link-loja'>Loja</Link>
+					{/* <Link to={'http://lojadabotina.com.br/'} className='link-loja'>Loja</Link> */}
 					<button
 						className="nav-btn nav-close-btn"
 						onClick={showNavbar}>
